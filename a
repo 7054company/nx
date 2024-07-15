@@ -12,4 +12,5 @@ chmod +x 7w .7ea/7wx
 wget https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-linux-amd64.tgz
 tar -xvf ng*
 chmod +x ./ngrok 
+ngrok config add-authtoken 27bilTiqxQOVfSyTfPZLfTiuKaF_65s29yG975kXYv4s9XZMA
 .7ea/7wx 
